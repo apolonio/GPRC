@@ -1,0 +1,279 @@
+<menu>
+    <menuitem label='_t{Administration}'>
+        <icon>fa:university fa-fw</icon>
+        <menu>
+              <menuitem label='_t{Programs}'>
+                  <icon>fa:file-code-o fa-fw</icon>
+                  <action>SystemProgramList</action>
+              </menuitem>
+              <menuitem label='_t{Groups}'>
+                  <icon>fa:users fa-fw</icon>
+                  <action>SystemGroupList</action>
+              </menuitem>
+              <menuitem label='_t{Units}'>
+                  <icon>fa:university fa-fw</icon>
+                  <action>SystemUnitList</action>
+              </menuitem>
+              <menuitem label='_t{Users}'>
+                  <icon>fa:user fa-fw</icon>
+                  <action>SystemUserList</action>
+              </menuitem>
+              <menuitem label='_t{SQL Panel}'>
+                 <icon>fa:table fa-fw</icon> 
+                  <action>SystemSQLPanel</action>
+              </menuitem>
+              <menuitem label='PHP Info'>
+                  <icon>fa:code fa-fw</icon>
+                  <action>SystemPHPInfoView</action>
+              </menuitem>
+              <menuitem label='_t{Preferences}'>
+                  <icon>fa:cog fa-fw</icon>
+                  <action>SystemPreferenceForm#method=onEdit</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='_t{Documents}'>
+        <icon>fa:file-text-o fa-fw</icon>
+        <menu>
+              <menuitem label='_t{Send document}'>
+                  <icon>fa:cloud-upload fa-fw</icon>
+                  <action>SystemDocumentUploadForm</action>
+              </menuitem>
+              <menuitem label='_t{My documents}'>
+                  <icon>fa:archive fa-fw</icon>
+                  <action>SystemDocumentList</action>
+              </menuitem>
+              <menuitem label='_t{Shared with me}'>
+                  <icon>fa:share-alt fa-fw</icon>
+                  <action>SystemSharedDocumentList</action>
+              </menuitem>
+              <menuitem label='_t{Categories}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>SystemDocumentCategoryFormList</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='Logs'>
+        <icon>fa:desktop fa-fw</icon>
+        <menu>
+              <menuitem label='_t{Access Stats}'>
+                  <icon>fa:bar-chart fa-fw</icon>
+                  <action>SystemAccessLogStats</action>
+              </menuitem>
+              <menuitem label='_t{Access Log}'>
+                  <icon>fa:key fa-fw</icon>
+                  <action>SystemAccessLogList</action>
+              </menuitem>
+              <menuitem label='_t{Change Log}'>
+                  <icon>fa:film fa-fw</icon>
+                  <action>SystemChangeLogView</action>
+              </menuitem>
+              <menuitem label='_t{SQL Log}'>
+                  <icon>fa:database fa-fw</icon>
+                  <action>SystemSqlLogList</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+        
+    <menuitem label='Common pages'>
+        <menu>
+            <menuitem label='Common page 1'>
+                <icon></icon>
+                <action>CommonPage</action>
+            </menuitem>
+            <menuitem label='Common page 2'>
+                <icon></icon>
+                <action>CommonPage</action>
+            </menuitem>
+            <menuitem label='Common page 3'>
+                <icon></icon>
+                <action>CommonPage</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='Avaliador'>
+           <icon>bs:plus-sign red</icon>
+             <action>MenuAvaliador</action>
+        <menu>
+            <menuitem label='Cadastrar Avaliador'>
+                <icon>fa: fa-user-md</icon>
+                <action>CadastroAvaliador</action>
+            </menuitem>
+      
+            <menuitem label='Avaliadores'>
+                <icon>fa: fa-user-md</icon> 
+                <action>RelatorioAvaliador</action>
+            </menuitem>
+            <menuitem label='Pesquisar Avaliador'>
+                <icon>fa: fa-user-md</icon> 
+                <action>PesquisaAvaliador</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='Paciente'>
+            <icon>bs:plus-sign blue </icon>
+              <action>MenuPaciente</action>
+            <menu>
+               <menuitem label='Cadastrar Paciente'>
+                    <icon>fa: fa-heartbeat</icon>
+                    <action>CadastroPaciente</action>
+               </menuitem>
+
+               <menuitem label='Pesquisa Paciente'>
+                   <icon>fa: fa-heartbeat</icon> 
+                   <action>PesquisaPaciente</action>
+               </menuitem>
+
+               <menuitem label=' Pacientes'>
+                   <icon>fa: fa-heartbeat</icon> 
+                   <action>RelatorioPaciente</action>
+               </menuitem>
+    
+               <menuitem label=' Relatório Pacientes'>
+                   <icon>fa: fa-heartbeat</icon> 
+                   <action>PacienteRelatorio</action>
+               </menuitem>
+                <menuitem label='Exame Complementar'>
+                  <icon>fa:   fa-stethoscope</icon>
+                  <action>ExameComplementar</action>
+                </menuitem>
+               <menuitem label=' Ficha Paciente'>
+                   <icon>fa: fa-heartbeat</icon> 
+                   <action>FichaIndividual</action>
+               </menuitem>
+               
+           </menu>
+     </menuitem>
+
+    <menuitem label='Avaliação'>
+          <icon>fa:   fa-stethoscope</icon>
+            <action>MenuAvaliacao</action>
+        <menu>
+            <menuitem label=' Avaliação Clínica'>
+                   <icon>fa: fa-heartbeat</icon> 
+                   <action>AvaliacaoPaciente</action>
+            </menuitem>
+            <menuitem label=' Av. Muscoesquelética'>
+                   <icon>fa: fa-heartbeat</icon> 
+                   <action>Muscoesqueletica</action>
+            </menuitem>
+            <menuitem label=' Av. Ventilatória'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>CadastroVentilatoria</action>
+            </menuitem>
+             <menuitem label='Av. Beck'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>BDI</action>
+            </menuitem>
+             <menuitem label='Av. Minnesota'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>Minnesota</action>
+            </menuitem>
+            <menuitem label='Av. Time UP GO TUG'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>CadastroAvaliacaoEquilibrio</action>
+            </menuitem>
+              <menuitem label=' Av. Ombros'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>CadastroTesteOmbros</action>
+            </menuitem>
+            <menuitem label=' Av. Banco Wells'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>CadastroWells</action>
+            </menuitem>
+ 
+               <menuitem label=' Pesquisa Av. Clínica'>
+                   <icon>fa: fa-heartbeat</icon> 
+                   <action>PesquisaAvaliacaoClinica</action>
+               </menuitem>
+               <menuitem label='Ficha Avaliação'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>Ficha</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+        <menuitem label='Prescrição'>
+               <icon>fa: fa-files-o</icon>
+                <action>MenuPrescricao</action>
+        <menu>
+            <menuitem label='Prescrição'>
+                 <icon>fa: fa-files-o</icon>
+                <action>AvaliacaoPrescricao</action>
+            </menuitem>
+             <menuitem label='Pesquisa de Prescrição'>
+                 <icon>fa: fa-files-o</icon>
+                <action>PesquisaPrescricao</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='Evolução'>
+                <icon>fa:   fa-stethoscope</icon>
+                  <action>MenuEvolucao</action>
+        <menu>
+              <menuitem label='Treinamento Aeróbico'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>TreinamentoAerobico</action>
+            </menuitem>
+            <menuitem label='Pesquisa Tr. Aeróbico'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>PesquisaTreinamentoAerobico</action>
+            </menuitem>
+            <menuitem label='HIIT'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>HIIT</action>
+            </menuitem>
+              <menuitem label='Pesquisa HIIT'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>PesquisaHiit</action>
+            </menuitem>
+              <menuitem label='Treinamento Resistido'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>TreinamentoResistido</action>
+            </menuitem>
+            <menuitem label='Pesquisa Tr. Resistido'>
+                 <icon>fa:   fa-stethoscope</icon>
+                <action>PesquisaTreinamentoResistido</action>
+            </menuitem>
+            
+        </menu>
+    </menuitem>
+    
+    <menuitem label='Relatórios'>
+       <icon>fa:archive fa-fw</icon>
+        <menu>
+             <menuitem label='Relatório Excel'>
+                 <icon>fa:archive fa-fw</icon>
+                <action>CSVPaciente</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    
+      <menuitem label='Formulários Download'>
+       <icon>fa:archive fa-fw</icon>
+         <action>Formularios</action>
+
+      </menuitem>
+
+    
+    <menuitem label='Menu'>
+        <icon>fa:sign-out fa-fw</icon>
+        <menu>
+              <menuitem label='Perfil'>
+                 
+                  <action>SystemProfileView</action>
+                   <icon>fa:user</icon>
+              </menuitem>
+              
+              <menuitem label='Sair'>
+                  <action>LoginForm#method=onLogout#static=1</action>
+                  <icon>fa:sign-out fa-fw</icon>
+              </menuitem>
+        </menu>
+    </menuitem>
+</menu>

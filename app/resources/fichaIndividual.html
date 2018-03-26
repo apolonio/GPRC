@@ -1,0 +1,211 @@
+<!--[main]-->
+<table>
+    <tr>
+        <td>
+            <table class="customform" style="border:1px solid #B7B7B7;width:640px">
+                <tr style="color:#000000;">
+                    <td class="sectiontitle" colspan=4>Dados do Paciente</td>
+                </tr>
+                <tr style="color:#000000;">
+                    <td style="font-weight:bold" align="center">Id</td>
+                    <td style="font-weight:bold" align="center" colspan="4">Nome</td>
+                </tr>
+                <tr style="color:#000000;">
+                    <td align="center">{$codigoPaciente}</td>
+                    <td align="center" colspan="2"><a generator="adianti" href="index.php?class=PacientForm&method=onEdit&key={$codPaciente}">{$nome} (Clique para Atualizar)</a></td>
+                </tr>
+                <tr style="color:#000000;">
+                    <td style="font-weight:bold" align="center">Sexo</td>
+                    <td style="font-weight:bold" align="center" colspan="4">Nascimento</td>
+                </tr>
+                <tr style="color:#000000;">
+                    <td align="center">{$sexo}</td>
+                    <td align="center">{$dataNascimento}</td>
+                </tr>
+                <tr style="color:#000000;">
+                    <td style="font-weight:bold" align="center">Peso</td>
+                    <td style="font-weight:bold" align="center">Estatura</td>
+                    <td style="font-weight:bold" align="center">Telefone</td>
+                    <td style="font-weight:bold" align="center">Email</td>
+                </tr>
+                <tr style="color:#000000;">
+                    <td align="center">{$peso}</td>
+                    <td align="center">{$estatura}</td>
+                    <td align="center">{$telefone}</td>
+                    <td align="center">{$email}</td>
+                </tr>
+             
+         
+            </table>
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td>
+            <table class="customform" style="border:1px solid #f5f5f5;width:640px">
+                <tr>
+                    <td class="sectiontitle" colspan="7">Exames Complementares</td>
+                </tr>
+                <tr bgcolor="#00FA9A;">
+                    <td align="center">ID</td>
+                    <td align="center">Avaliador</td>
+                    <td align="center">TipoExame</td>              
+                    <td align="center">Arquivo</td>
+                    <td align="center">Observações</td>
+                    <td align="center">Data</td>
+                </tr>
+                <!--[exames]-->
+                <tr style="color:#099e1d;">
+                    <td align="center"><a generator="adianti" href="index.php?class=ExameForm&method=onEdit&key={$codExameItem}">{$codExameItem}</a></td>
+                    <td align="left">{$codAvaliador}</td>
+                    <td align="left">{$codTipoExame}</td>
+                    <td align="center"><a generator="adianti" src="{$file_path}">{$file_path}</a></td>
+                    <td align="right">{$parecer}</td>
+                    <td align="right">{$dataExameItem}</td>
+                </tr>
+                <!--[/exames]-->
+      
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table class="customform" style="border:1px solid #000000;width:640px">
+                <tr>
+                    <td class="sectiontitle" colspan="7">Exames Equilibrio</td>
+                </tr>
+                <tr bgcolor="#00FA9A">
+                    <td align="center">ID</td>
+                    <td align="center">Avaliador</td>
+                    <td align="center">Media</td>
+                    <td align="center">Conclusão</td>
+                    <td align="center">Parecer</td>
+                    <td align="center">Data</td>
+                </tr>
+                <!--[equilibrio]-->
+                <tr style="color:#099e1d;" >
+                    <td align="center"><a generator="adianti" href="index.php?class=EquilibrioForm&method=onEdit&key={$codAvaliacaoEquilibrio}">{$codAvaliacaoEquilibrio}</a></td>
+                    <td align="left">{$codAvaliador}</td>
+                    <td align="right">{$media}</td>
+                    <td align="right">{$conclusao}</td>
+                    <td align="right">{$parecer}</td>
+                    <td align="right">{$dataAvaliacao}</td>
+                </tr>
+                <!--[/equilibrio]-->
+      
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table class="customform" style="border:1px solid #blue;width:640px">
+                <tr>
+                    <td class="sectiontitle" colspan="7">Avaliação dos  Ombros</td>
+                </tr>
+               <tr bgcolor="#00FA9A">
+                    <td align="center">ID</td>
+                    <td align="center">Avaliador</td>
+                    <td align="center">Media</td>
+                    <td align="center">Mão Dominante</td>
+                    <td align="center">Conclusão</td>
+                    <td align="center">Parecer</td>
+                    <td align="center">Data</td>
+                </tr>
+                <!--[ombro]-->
+                <tr style="color:#099e1d;">
+                    <td align="center"><a generator="adianti" href="index.php?class=OmbrosForm&method=onEdit&key={$codAvaliacaoOmbros}">{$codAvaliacaoOmbros}</a></td>
+                    <td align="left">{$codAvaliador}</td>
+                    <td align="right">{$media}</td>
+                    <td align="right">{$maoDominante}</td>
+                    <td align="right">{$conclusao}</td>
+                    <td align="right">{$parecer}</td>
+                    <td align="right">{$dataAvaliacao}</td>
+                </tr>
+                <!--[/ombro]-->
+      
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table class="customform" style="border:1px solid #blue;width:640px">
+                <tr>
+                    <td class="sectiontitle" colspan="7">Avaliação BDI</td>
+                </tr>
+                <tr bgcolor="#00FA9A">
+                    <td align="center">ID</td>
+                    <td align="center">Avaliador</td>
+                    <td align="center">Conclusão</td>
+                    <td align="center">Parecer</td>
+                    <td align="center">Data</td>
+                </tr>
+                <!--[bdi]-->
+                <tr style="color:#099e1d;">
+                    <td align="center"><a generator="adianti" href="index.php?class=BDIForm&method=onEdit&key={$codBDI}">{$codBDI}</a></td>
+                    <td align="left">{$codAvaliador}</td>
+                    <td align="right">{$conclusao}</td>
+                    <td align="right">{$parecer}</td>
+                    <td align="right">{$dataBDI}</td>
+                </tr>
+                <!--[/bdi]-->
+      
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table class="customform" style="border:1px solid #blue;width:640px">
+                <tr>
+                    <td class="sectiontitle" colspan="7">Avaliação Banco Wells</td>
+                </tr>
+                <tr bgcolor="#00FA9A">
+                    <td align="center">ID</td>
+                    <td align="center">Avaliador</td>
+                    <td align="center">Media</td>
+                    <td align="center">Conclusão</td>
+                    <td align="center">Parecer</td>
+                    <td align="center">Data</td>
+                </tr>
+                <!--[well]-->
+                <tr style="color:#099e1d;">
+                    <td align="center"><a generator="adianti" href="index.php?class=WellsForm&method=onEdit&key={$codWells}">{$codWells}</a></td>
+                    <td align="left">{$codAvaliador}</td>
+                    <td align="right">{$media}</td>
+                    <td align="right">{$conclusao}</td>
+                    <td align="right">{$parecer}</td>
+                    <td align="right">{$dataAvaliacao}</td>
+                </tr>
+                <!--[/well]-->
+      
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table class="customform" style="border:1px solid #blue;width:640px">
+                <tr>
+                    <td class="sectiontitle" colspan="7">Avaliação Minnesota</td>
+                </tr>
+                <tr bgcolor="#00FA9A">
+                    <td align="center">ID</td>
+                    <td align="center">Avaliador</td>
+                    <td align="center">Conclusão</td>
+                    <td align="center">Parecer</td>
+                    <td align="center">Data</td>
+                </tr>
+                <!--[minnesota]-->
+                <tr style="color:#099e1d;">
+                    <td align="center"><a generator="adianti" href="index.php?class=MinnesotaForm&method=onEdit&key={$codMin}">{$codMin}</a></td>
+                    <td align="left">{$codAvaliador}</td>
+                    <td align="right">{$conclusao}</td>
+                    <td align="right">{$parecer}</td>
+                    <td align="right">{$dataMin}</td>
+                </tr>
+                <!--[/minnesota]-->
+      
+            </table>
+        </td>
+    </tr>
+</table>
+<!--[/main]-->
