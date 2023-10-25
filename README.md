@@ -2,8 +2,7 @@
 Prontuário Digital
 Grupo de Pesquisa em Reabilitação Cardiopulmonar
 Acessível em
-http://www.icriacoes.com.br/gprc
-http://www.icriacoes.com.br/gprc2
+http://www.criptoflix.com.br
 # Esse sistema web tem os seguintes pré-requisitos
 Banco de dados MYSQL
 Desenvolvido em PHP 5.6 desejável 7.0
